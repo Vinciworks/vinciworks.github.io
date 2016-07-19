@@ -1,0 +1,5 @@
+.flip-container .front img,
+.flip-container .back img,
+.tap-or-hover {
+  display: none;
+}

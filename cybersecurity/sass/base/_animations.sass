@@ -1,0 +1,170 @@
+@-webkit-keyframes zoomIn
+  from
+    opacity: 0
+    -webkit-transform: scale3d(.3, .3, .3)
+    transform: scale3d(.3, .3, .3)
+  50%
+    opacity: 1
+
+@keyframes zoomIn
+  from
+    opacity: 0
+    -webkit-transform: scale3d(.3, .3, .3)
+    transform: scale3d(.3, .3, .3)
+  50%
+    opacity: 1
+
+.zoomIn
+  -webkit-animation-duration: 0.7s
+  animation-duration: 0.7s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  -webkit-animation-name: zoomIn
+  animation-name: zoomIn
+
+@-webkit-keyframes zoomOut
+  from
+    opacity: 1
+  50%
+    opacity: 0
+    -webkit-transform: scale3d(.3, .3, .3)
+    transform: scale3d(.3, .3, .3)
+  to
+    opacity: 0
+
+@keyframes zoomOut
+  from
+    opacity: 1
+  50%
+    opacity: 0
+    -webkit-transform: scale3d(.3, .3, .3)
+    transform: scale3d(.3, .3, .3)
+  to
+    opacity: 0
+
+.zoomOut
+  -webkit-animation-duration: 0.7s
+  animation-duration: 0.7s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  -webkit-animation-name: zoomOut
+  animation-name: zoomOut
+
+
+@keyframes fadeOut
+  from
+    left: 0
+    opacity: 1
+  to
+    left: 300px
+    opacity: 0
+
+.fadeOut
+  -webkit-animation-duration: .75s
+  animation-duration: .75s
+  animation-fill-mode: both
+  animation-name: fadeOut
+
+@keyframes fadeIn
+  from
+    left: -300px
+    opacity: 0
+  to
+    left: 0px
+    opacity: 1
+
+.fadeIn
+  -webkit-animation-duration: .75s
+  animation-duration: .75s
+  animation-fill-mode: both
+  animation-name: fadeIn
+
+
+
+
+
+.animated
+  &.bounceIn, &.bounceOut
+    -webkit-animation-duration: .75s
+    animation-duration: .75s
+
+@-webkit-keyframes bounceIn
+  from, 20%, 40%, 60%, 80%, to
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+
+  0%
+    opacity: 0
+    -webkit-transform: scale3d(0.3, 0.3, 0.3)
+    transform: scale3d(0.3, 0.3, 0.3)
+
+  20%
+    -webkit-transform: scale3d(1.1, 1.1, 1.1)
+    transform: scale3d(1.1, 1.1, 1.1)
+
+  40%
+    -webkit-transform: scale3d(0.9, 0.9, 0.9)
+    transform: scale3d(0.9, 0.9, 0.9)
+
+  60%
+    opacity: 1
+    -webkit-transform: scale3d(1.03, 1.03, 1.03)
+    transform: scale3d(1.03, 1.03, 1.03)
+
+  80%
+    -webkit-transform: scale3d(0.97, 0.97, 0.97)
+    transform: scale3d(0.97, 0.97, 0.97)
+
+  to
+    opacity: 1
+    -webkit-transform: scale3d(1, 1, 1)
+    transform: scale3d(1, 1, 1)
+
+
+@keyframes bounceIn
+  from, 20%, 40%, 60%, 80%, to
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+
+  0%
+    opacity: 0
+    -webkit-transform: scale3d(0.3, 0.3, 0.3)
+    transform: scale3d(0.3, 0.3, 0.3)
+
+  20%
+    -webkit-transform: scale3d(1.1, 1.1, 1.1)
+    transform: scale3d(1.1, 1.1, 1.1)
+
+  40%
+    -webkit-transform: scale3d(0.9, 0.9, 0.9)
+    transform: scale3d(0.9, 0.9, 0.9)
+
+  60%
+    opacity: 1
+    -webkit-transform: scale3d(1.03, 1.03, 1.03)
+    transform: scale3d(1.03, 1.03, 1.03)
+
+  80%
+    -webkit-transform: scale3d(0.97, 0.97, 0.97)
+    transform: scale3d(0.97, 0.97, 0.97)
+
+  to
+    opacity: 1
+    -webkit-transform: scale3d(1, 1, 1)
+    transform: scale3d(1, 1, 1)
+
+
+.bounceIn
+  -webkit-animation-duration: 0.7s
+  animation-duration: 0.7s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  -webkit-animation-name: bounceIn
+  animation-name: bounceIn
+  &.yes
+    -webkit-animation-delay: 200ms
+    animation-delay: 200ms
+  &.no
+    -webkit-animation-delay: 350ms
+    animation-delay: 350ms
+

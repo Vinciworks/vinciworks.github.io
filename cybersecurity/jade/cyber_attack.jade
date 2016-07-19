@@ -1,0 +1,24 @@
+- var current_html = 'cyber_attack'
+
+include ./includes/head.jade
+
+body(class="#{current_html}")
+	.container
+		.device
+			.screen-background
+				.screen.scroll.animated.zoomIn
+					.app-content
+						h1 CYBER ATTACK
+						p Cyber-attack can be driven by the attacker’s intent on financial gain but can also target individuals,
+							| organizations, and governments as an act of hostility and to attack the regular functioning of such
+							| entities. This could be for political purposes or even purely for the fun of it. In today’s world, wars
+							| are not only fought on the physical battlefield, but also in cyber space and can cripple our
+							| day-to-day operations, both privately and publicly. Compromises to cyber security can result in
+							| criminals or hackers obtaining sensitive information, funds and committing identity theft.
+						.laptop
+							.bubble.bubble1 There are several forms of cyber-attack, many of which involve attack from the outside inward. These are generally tended to by the firm’s IT
+							.bubble.bubble2 There are several forms of cyber-attack, many of which involve attack from the outside inward. These are generally tended to by the firm’s IT department. The focus of this course is on the vulnerabilities we can each control regarding the leaking of information from the inside outward.
+
+					a.home(href="./")
+
+include ./includes/foot.jade
